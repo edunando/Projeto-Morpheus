@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #181920;
+}
+header{
+    background-color: #1B1F27;
+}
+li{
+    list-style: none;
+}
+
+a img{
+    width: 80px;
+    height: auto;
+}
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 32px;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    border: 1px rgba(86, 89, 95, 0.76) solid;
+}
+
+.nav-link{
+    transition: 0.5s ease;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: rgb(124, 66, 179);
+}
+
+.hamburguer{
+    display: block;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-widht:768px){
+    .hamburguer{
+        display: block;
+    }
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburguer.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburguer.active .bar:nth-child(1){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+}
+
+.nav-menu{
+    position: fixed;
+    right: -100%;
+    top:80px;
+    gap: 6px;
+    border: 0 0 20px 20px;
+    background-color: #333842;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    transition: 0.3s;
+}
+
+.nav-item{
+    margin: 5px 0;
+}
+
+
+.nav-menu.active{
+    right: 0;
+}
+
+.padding-1 {
+    padding: 0 32px;
+}
+
+.text-purple {
+    color: rgb(90, 46, 131);
+}
+
+.main {
+    padding-top: 32px;
+}
+
+.title {
+    color:#5568FE;
+}
+
+.card-color {
+    background-color: #1B1F27;
+}
+
+.border-purple {
+   border: 1px rgb(90, 46, 131) solid;
+}
+
+.button-purple {
+    background-color: rgb(90, 46, 131);
+    color: white;
+}
+
+.button-purple:hover {
+    background-color:  #333842;
+    color: rgb(124, 66, 179);
+}
+
+.font-xxlarge {
+    font-size: xx-large;
+}
+
+.card-input {
+    background-color: #333842;
+}
